@@ -1,0 +1,1453 @@
+{
+	"info": {
+		"_postman_id": "919038a9-8dff-4d28-8618-d0d44c0aa3cc",
+		"name": "ConcentraApi",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "234774"
+	},
+	"item": [
+		{
+			"name": "Clients",
+			"item": [
+				{
+					"name": "Client",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1bmlxdWVfbmFtZSI6ImFkbWluIiwibmJmIjoxNjk2MTA1NDEyLCJleHAiOjE2OTYxMDkwMTIsImlhdCI6MTY5NjEwNTQxMn0.QBeSti0k5EYuDnx0TppV-Myer7Y2wTC4pfSwRb_pAUQ",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"clientId\": \"00115689576\",\r\n  \"personTypeId\": 1,\r\n  \"name\": \"Juan Javier\",\r\n  \"lastName\": \"Jerez Veloz\",\r\n  \"birthdate\": \"1985-12-03\",\r\n  \"userId\": 1,\r\n  \"statusId\": 1,\r\n  \"wdate\": \"2023-09-29T19:47:55.865Z\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5157/api/clients",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5157",
+							"path": [
+								"api",
+								"clients"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Clients",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1bmlxdWVfbmFtZSI6ImFkbWluIiwibmJmIjoxNjk2MDE2MzUwLCJleHAiOjE2OTYwMTk5NTAsImlhdCI6MTY5NjAxNjM1MH0.iOyotjuF7cM_oStywQphqCUMjxNxddBgmBlTTVDiLMQ",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5157/api/clients",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5157",
+							"path": [
+								"api",
+								"clients"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Client",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1bmlxdWVfbmFtZSI6ImFkbWluIiwibmJmIjoxNjk2MDE2MzUwLCJleHAiOjE2OTYwMTk5NTAsImlhdCI6MTY5NjAxNjM1MH0.iOyotjuF7cM_oStywQphqCUMjxNxddBgmBlTTVDiLMQ",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5157/api/clients/00117378570",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5157",
+							"path": [
+								"api",
+								"clients",
+								"00117378570"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Client",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1bmlxdWVfbmFtZSI6ImFkbWluIiwibmJmIjoxNjk2MDE5ODgyLCJleHAiOjE2OTYwMjM0ODIsImlhdCI6MTY5NjAxOTg4Mn0.BsgR18oOm-vHT6lt0iub5OJcXHD08Tj4GPqFtVWCqUE",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"clientId\": \"00117475570\",\r\n  \"personTypeId\": 1,\r\n  \"name\": \"Pepe\",\r\n  \"lastName\": \"Test\",\r\n  \"birthdate\": \"2023-09-29T20:37:12.303Z\",\r\n  \"userId\": 1,\r\n  \"statusId\": 1,\r\n  \"wdate\": \"2023-09-29T20:37:12.303Z\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5157/api/clients/00117475570",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5157",
+							"path": [
+								"api",
+								"clients",
+								"00117475570"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Client",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1bmlxdWVfbmFtZSI6ImFkbWluIiwibmJmIjoxNjk2MDE5ODgyLCJleHAiOjE2OTYwMjM0ODIsImlhdCI6MTY5NjAxOTg4Mn0.BsgR18oOm-vHT6lt0iub5OJcXHD08Tj4GPqFtVWCqUE",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5157/api/clients/00117475570",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5157",
+							"path": [
+								"api",
+								"clients",
+								"00117475570"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"description": "Aquí almaceno todos los request al endpoint de clientes"
+		},
+		{
+			"name": "Brands",
+			"item": [
+				{
+					"name": "Brand",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1bmlxdWVfbmFtZSI6ImFkbWluIiwibmJmIjoxNjk2MDE5ODgyLCJleHAiOjE2OTYwMjM0ODIsImlhdCI6MTY5NjAxOTg4Mn0.BsgR18oOm-vHT6lt0iub5OJcXHD08Tj4GPqFtVWCqUE",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"brand1\": \"Honda\",\r\n  \"userId\": 1,\r\n  \"statusId\": 1,\r\n  \"wdate\": \"2023-09-29T21:02:58.867Z\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5157/api/brands",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5157",
+							"path": [
+								"api",
+								"brands"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Brands",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1bmlxdWVfbmFtZSI6ImFkbWluIiwibmJmIjoxNjk2MDE5ODgyLCJleHAiOjE2OTYwMjM0ODIsImlhdCI6MTY5NjAxOTg4Mn0.BsgR18oOm-vHT6lt0iub5OJcXHD08Tj4GPqFtVWCqUE",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5157/api/brands",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5157",
+							"path": [
+								"api",
+								"brands"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Brand",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1bmlxdWVfbmFtZSI6ImFkbWluIiwibmJmIjoxNjk2MDE5ODgyLCJleHAiOjE2OTYwMjM0ODIsImlhdCI6MTY5NjAxOTg4Mn0.BsgR18oOm-vHT6lt0iub5OJcXHD08Tj4GPqFtVWCqUE",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5157/api/brands/3",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5157",
+							"path": [
+								"api",
+								"brands",
+								"3"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Brand",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1bmlxdWVfbmFtZSI6ImFkbWluIiwibmJmIjoxNjk2MDE5ODgyLCJleHAiOjE2OTYwMjM0ODIsImlhdCI6MTY5NjAxOTg4Mn0.BsgR18oOm-vHT6lt0iub5OJcXHD08Tj4GPqFtVWCqUE",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"BrandId\": 3,\r\n  \"brand1\": \"Toyota\",\r\n  \"userId\": 1,\r\n  \"statusId\": 1,\r\n  \"wdate\": \"2023-09-29T21:02:58.867Z\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5157/api/brands/3",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5157",
+							"path": [
+								"api",
+								"brands",
+								"3"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Brand",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1bmlxdWVfbmFtZSI6ImFkbWluIiwibmJmIjoxNjk2MDE5ODgyLCJleHAiOjE2OTYwMjM0ODIsImlhdCI6MTY5NjAxOTg4Mn0.BsgR18oOm-vHT6lt0iub5OJcXHD08Tj4GPqFtVWCqUE",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5157/api/brands/3",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5157",
+							"path": [
+								"api",
+								"brands",
+								"3"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"description": "Aquí almaceno todos los request al endpoint de Marcas de vehiculos."
+		},
+		{
+			"name": "Models",
+			"item": [
+				{
+					"name": "Model",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1bmlxdWVfbmFtZSI6ImFkbWluIiwibmJmIjoxNjk2MTA1NDEyLCJleHAiOjE2OTYxMDkwMTIsImlhdCI6MTY5NjEwNTQxMn0.QBeSti0k5EYuDnx0TppV-Myer7Y2wTC4pfSwRb_pAUQ",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"model1\": \"Accord\",\r\n  \"brandId\": 1,\r\n  \"userId\": 1,\r\n  \"statusId\": 1,\r\n  \"wdate\": \"2023-09-29T22:09:48.684Z\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5157/api/models",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5157",
+							"path": [
+								"api",
+								"models"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Models",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1bmlxdWVfbmFtZSI6ImFkbWluIiwibmJmIjoxNjk2MDI1NDI1LCJleHAiOjE2OTYwMjkwMjUsImlhdCI6MTY5NjAyNTQyNX0.OrQ_nglY2F9S3uS0gDWfUT1GWNdn8urWwsMFZAIyrOI",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5157/api/models",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5157",
+							"path": [
+								"api",
+								"models"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Model",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1bmlxdWVfbmFtZSI6ImFkbWluIiwibmJmIjoxNjk2MDI1NDI1LCJleHAiOjE2OTYwMjkwMjUsImlhdCI6MTY5NjAyNTQyNX0.OrQ_nglY2F9S3uS0gDWfUT1GWNdn8urWwsMFZAIyrOI",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5157/api/models/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5157",
+							"path": [
+								"api",
+								"models",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Model",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1bmlxdWVfbmFtZSI6ImFkbWluIiwibmJmIjoxNjk2MDI1NDI1LCJleHAiOjE2OTYwMjkwMjUsImlhdCI6MTY5NjAyNTQyNX0.OrQ_nglY2F9S3uS0gDWfUT1GWNdn8urWwsMFZAIyrOI",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"modelId\": 1,\r\n  \"model1\": \"Civic\",\r\n  \"brandId\": 5,\r\n  \"userId\": 1,\r\n  \"statusId\": 1,\r\n  \"wdate\": \"2023-09-29T22:36:50.439Z\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5157/api/models/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5157",
+							"path": [
+								"api",
+								"models",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Model",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1bmlxdWVfbmFtZSI6ImFkbWluIiwibmJmIjoxNjk2MDI1NDI1LCJleHAiOjE2OTYwMjkwMjUsImlhdCI6MTY5NjAyNTQyNX0.OrQ_nglY2F9S3uS0gDWfUT1GWNdn8urWwsMFZAIyrOI",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5157/api/models/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5157",
+							"path": [
+								"api",
+								"models",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"description": "Aquí almaceno todos los request al endpoint de Modelos de vehiculos."
+		},
+		{
+			"name": "PersonTypes",
+			"item": [
+				{
+					"name": "PersonType",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1bmlxdWVfbmFtZSI6ImFkbWluIiwibmJmIjoxNjk2MDI1NDI1LCJleHAiOjE2OTYwMjkwMjUsImlhdCI6MTY5NjAyNTQyNX0.OrQ_nglY2F9S3uS0gDWfUT1GWNdn8urWwsMFZAIyrOI",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"personType1\": \"Persona Maritima\",\r\n  \"userId\": 1,\r\n  \"statusId\": 1,\r\n  \"wdate\": \"2023-09-29T22:58:02.498Z\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5157/api/personTypes",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5157",
+							"path": [
+								"api",
+								"personTypes"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "PersonTypes",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1bmlxdWVfbmFtZSI6ImFkbWluIiwibmJmIjoxNjk2MDI5MDg4LCJleHAiOjE2OTYwMzI2ODgsImlhdCI6MTY5NjAyOTA4OH0.WLmi1k9LnnAbal47w-xjAIo_p725hXj2MiqSC-ecAM0",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5157/api/personTypes",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5157",
+							"path": [
+								"api",
+								"personTypes"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "PersonType",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1bmlxdWVfbmFtZSI6ImFkbWluIiwibmJmIjoxNjk2MDI1NDI1LCJleHAiOjE2OTYwMjkwMjUsImlhdCI6MTY5NjAyNTQyNX0.OrQ_nglY2F9S3uS0gDWfUT1GWNdn8urWwsMFZAIyrOI",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5157/api/personTypes/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5157",
+							"path": [
+								"api",
+								"personTypes",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "PersonType",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1bmlxdWVfbmFtZSI6ImFkbWluIiwibmJmIjoxNjk2MDI5MDg4LCJleHAiOjE2OTYwMzI2ODgsImlhdCI6MTY5NjAyOTA4OH0.WLmi1k9LnnAbal47w-xjAIo_p725hXj2MiqSC-ecAM0",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"personTypeId\": 3,\r\n  \"personType1\": \"Otra Persona\",\r\n  \"userId\": 1,\r\n  \"statusId\": 1,\r\n  \"wdate\": \"2023-09-29T23:10:33.886Z\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5157/api/personTypes/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5157",
+							"path": [
+								"api",
+								"personTypes",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "PersonType",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1bmlxdWVfbmFtZSI6ImFkbWluIiwibmJmIjoxNjk2MDI5MDg4LCJleHAiOjE2OTYwMzI2ODgsImlhdCI6MTY5NjAyOTA4OH0.WLmi1k9LnnAbal47w-xjAIo_p725hXj2MiqSC-ecAM0",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5157/api/personTypes/3",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5157",
+							"path": [
+								"api",
+								"personTypes",
+								"3"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"description": "Aquí almaceno todos los request al endpoint de Tipos de persona."
+		},
+		{
+			"name": "Plates",
+			"item": [
+				{
+					"name": "Plate",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1bmlxdWVfbmFtZSI6ImFkbWluIiwibmJmIjoxNjk2MTA1NDEyLCJleHAiOjE2OTYxMDkwMTIsImlhdCI6MTY5NjEwNTQxMn0.QBeSti0k5EYuDnx0TppV-Myer7Y2wTC4pfSwRb_pAUQ",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"vehicleID\": 2,\r\n    \"userID\": 1\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5157/api/plates",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5157",
+							"path": [
+								"api",
+								"plates"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Plates",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1bmlxdWVfbmFtZSI6ImFkbWluIiwibmJmIjoxNjk2MDM2ODg4LCJleHAiOjE2OTYwNDA0ODgsImlhdCI6MTY5NjAzNjg4OH0.auH1BIzZKneMXy0E0NuOPk4AZptGKdxr86uv_oCiy-M",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5157/api/plates",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5157",
+							"path": [
+								"api",
+								"plates"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Plate",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1bmlxdWVfbmFtZSI6ImFkbWluIiwibmJmIjoxNjk2MDM2ODg4LCJleHAiOjE2OTYwNDA0ODgsImlhdCI6MTY5NjAzNjg4OH0.auH1BIzZKneMXy0E0NuOPk4AZptGKdxr86uv_oCiy-M",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5157/api/plates/793954",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5157",
+							"path": [
+								"api",
+								"plates",
+								"793954"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Plate",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1bmlxdWVfbmFtZSI6ImFkbWluIiwibmJmIjoxNjk2MDM2ODg4LCJleHAiOjE2OTYwNDA0ODgsImlhdCI6MTY5NjAzNjg4OH0.auH1BIzZKneMXy0E0NuOPk4AZptGKdxr86uv_oCiy-M",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5157/api/plates/793954",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5157",
+							"path": [
+								"api",
+								"plates",
+								"793954"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"description": "Aquí almaceno todos los request al endpoint de Placa."
+		},
+		{
+			"name": "VehicleTypes",
+			"item": [
+				{
+					"name": "VehicleType",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1bmlxdWVfbmFtZSI6ImFkbWluIiwibmJmIjoxNjk2MDMzMDEyLCJleHAiOjE2OTYwMzY2MTIsImlhdCI6MTY5NjAzMzAxMn0.bSyO35RSip_HCSxxtul1Krv0Mtu0vj_SDnEERGKs-Ds",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"vehicleType1\": \"Prueba\",\r\n  \"plateType\": \"Z\",\r\n  \"platePrice\": 5000,\r\n  \"userId\": 1,\r\n  \"statusId\": 1,\r\n  \"wdate\": \"2023-09-30T00:15:46.129Z\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5157/api/vehicleTypes",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5157",
+							"path": [
+								"api",
+								"vehicleTypes"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "VehicleTypes",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1bmlxdWVfbmFtZSI6ImFkbWluIiwibmJmIjoxNjk2MDMzMDEyLCJleHAiOjE2OTYwMzY2MTIsImlhdCI6MTY5NjAzMzAxMn0.bSyO35RSip_HCSxxtul1Krv0Mtu0vj_SDnEERGKs-Ds",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5157/api/vehicleTypes",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5157",
+							"path": [
+								"api",
+								"vehicleTypes"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "VehicleType",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1bmlxdWVfbmFtZSI6ImFkbWluIiwibmJmIjoxNjk2MDMzMDEyLCJleHAiOjE2OTYwMzY2MTIsImlhdCI6MTY5NjAzMzAxMn0.bSyO35RSip_HCSxxtul1Krv0Mtu0vj_SDnEERGKs-Ds",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5157/api/vehicleTypes/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5157",
+							"path": [
+								"api",
+								"vehicleTypes",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "VehicleType",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1bmlxdWVfbmFtZSI6ImFkbWluIiwibmJmIjoxNjk2MDMzMDEyLCJleHAiOjE2OTYwMzY2MTIsImlhdCI6MTY5NjAzMzAxMn0.bSyO35RSip_HCSxxtul1Krv0Mtu0vj_SDnEERGKs-Ds",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"vehicleTypeId\": 5,\r\n  \"vehicleType1\": \"Probando\",\r\n  \"plateType\": \"X\",\r\n  \"platePrice\": 7000,\r\n  \"userId\": 1,\r\n  \"statusId\": 1,\r\n  \"wdate\": \"2023-09-30T00:21:41.591Z\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5157/api/vehicleTypes/5",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5157",
+							"path": [
+								"api",
+								"vehicleTypes",
+								"5"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "VehicleType",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1bmlxdWVfbmFtZSI6ImFkbWluIiwibmJmIjoxNjk2MDMzMDEyLCJleHAiOjE2OTYwMzY2MTIsImlhdCI6MTY5NjAzMzAxMn0.bSyO35RSip_HCSxxtul1Krv0Mtu0vj_SDnEERGKs-Ds",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5157/api/vehicleTypes/5",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5157",
+							"path": [
+								"api",
+								"vehicleTypes",
+								"5"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"description": "Aquí almaceno todos los request al endpoint de Tipos de Vehiculos."
+		},
+		{
+			"name": "Vehicles",
+			"item": [
+				{
+					"name": "Vehicle",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1bmlxdWVfbmFtZSI6ImFkbWluIiwibmJmIjoxNjk2MTA1NDEyLCJleHAiOjE2OTYxMDkwMTIsImlhdCI6MTY5NjEwNTQxMn0.QBeSti0k5EYuDnx0TppV-Myer7Y2wTC4pfSwRb_pAUQ",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"vehicleTypeId\": 1,\r\n  \"brandId\": 1,\r\n  \"modelId\": 1,\r\n  \"color\": \"Rojo\",\r\n  \"year\": 2019,\r\n  \"clientId\": \"00115689576\",\r\n  \"userId\": 1,\r\n  \"statusId\": 1,\r\n  \"wdate\": \"2023-09-30T00:36:55.675Z\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5157/api/vehicles",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5157",
+							"path": [
+								"api",
+								"vehicles"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Vehicles",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1bmlxdWVfbmFtZSI6ImFkbWluIiwibmJmIjoxNjk2MTA1NDEyLCJleHAiOjE2OTYxMDkwMTIsImlhdCI6MTY5NjEwNTQxMn0.QBeSti0k5EYuDnx0TppV-Myer7Y2wTC4pfSwRb_pAUQ",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5157/api/vehicles",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5157",
+							"path": [
+								"api",
+								"vehicles"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Vehicle",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1bmlxdWVfbmFtZSI6ImFkbWluIiwibmJmIjoxNjk2MDMzMDEyLCJleHAiOjE2OTYwMzY2MTIsImlhdCI6MTY5NjAzMzAxMn0.bSyO35RSip_HCSxxtul1Krv0Mtu0vj_SDnEERGKs-Ds",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5157/api/vehicles/2",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5157",
+							"path": [
+								"api",
+								"vehicles",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Vehicle",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1bmlxdWVfbmFtZSI6ImFkbWluIiwibmJmIjoxNjk2MDMzMDEyLCJleHAiOjE2OTYwMzY2MTIsImlhdCI6MTY5NjAzMzAxMn0.bSyO35RSip_HCSxxtul1Krv0Mtu0vj_SDnEERGKs-Ds",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"vehicleId\": 2,\r\n  \"vehicleTypeId\": 1,\r\n  \"brandId\": 5,\r\n  \"modelId\": 2,\r\n  \"color\": \"Verde\",\r\n  \"year\": 2021,\r\n  \"clientId\": \"00117378570\",\r\n  \"userId\": 1,\r\n  \"statusId\": 1,\r\n  \"wdate\": \"2023-09-30T00:44:34.442Z\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5157/api/vehicles/2",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5157",
+							"path": [
+								"api",
+								"vehicles",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Vehicle",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1bmlxdWVfbmFtZSI6ImFkbWluIiwibmJmIjoxNjk2MDMzMDEyLCJleHAiOjE2OTYwMzY2MTIsImlhdCI6MTY5NjAzMzAxMn0.bSyO35RSip_HCSxxtul1Krv0Mtu0vj_SDnEERGKs-Ds",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5157/api/vehicles/2",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5157",
+							"path": [
+								"api",
+								"vehicles",
+								"2"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"description": "Aquí almaceno todos los request al endpoint de Vehiculos."
+		},
+		{
+			"name": "Users",
+			"item": [
+				{
+					"name": "Users",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1bmlxdWVfbmFtZSI6ImFkbWluIiwibmJmIjoxNjk2MDc2MDAzLCJleHAiOjE2OTYwNzk2MDMsImlhdCI6MTY5NjA3NjAwM30.9adhQhFJm_ExY0Vnm-a1UAaAIc3zxTq5RNIynQm15E8",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5157/api/users",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5157",
+							"path": [
+								"api",
+								"users"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "User",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1bmlxdWVfbmFtZSI6ImFkbWluIiwibmJmIjoxNjk2MDc2MDAzLCJleHAiOjE2OTYwNzk2MDMsImlhdCI6MTY5NjA3NjAwM30.9adhQhFJm_ExY0Vnm-a1UAaAIc3zxTq5RNIynQm15E8",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5157/api/users/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5157",
+							"path": [
+								"api",
+								"users",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "User",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1bmlxdWVfbmFtZSI6ImFkbWluIiwibmJmIjoxNjk2MDc2MDAzLCJleHAiOjE2OTYwNzk2MDMsImlhdCI6MTY5NjA3NjAwM30.9adhQhFJm_ExY0Vnm-a1UAaAIc3zxTq5RNIynQm15E8",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"userName\": \"eperez\",\r\n  \"password\": \"123456\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5157/api/users",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5157",
+							"path": [
+								"api",
+								"users"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "User",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1bmlxdWVfbmFtZSI6ImFkbWluIiwibmJmIjoxNjk2MDc2MDAzLCJleHAiOjE2OTYwNzk2MDMsImlhdCI6MTY5NjA3NjAwM30.9adhQhFJm_ExY0Vnm-a1UAaAIc3zxTq5RNIynQm15E8",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"userId\": 3,\r\n  \"userName\": \"papa\",\r\n  \"password\": \"123\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5157/api/users/3",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5157",
+							"path": [
+								"api",
+								"users",
+								"3"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "User",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1bmlxdWVfbmFtZSI6ImFkbWluIiwibmJmIjoxNjk2MDc2MDAzLCJleHAiOjE2OTYwNzk2MDMsImlhdCI6MTY5NjA3NjAwM30.9adhQhFJm_ExY0Vnm-a1UAaAIc3zxTq5RNIynQm15E8",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5157/api/users/3",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5157",
+							"path": [
+								"api",
+								"users",
+								"3"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"description": "Aquí almaceno todos los request al endpoint de Placa."
+		},
+		{
+			"name": "PlateLookUp",
+			"item": [
+				{
+					"name": "PlateLookUp",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1bmlxdWVfbmFtZSI6ImFkbWluIiwibmJmIjoxNjk2MTA1NDEyLCJleHAiOjE2OTYxMDkwMTIsImlhdCI6MTY5NjEwNTQxMn0.QBeSti0k5EYuDnx0TppV-Myer7Y2wTC4pfSwRb_pAUQ",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5157/api/plateLookUp/00115689576",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5157",
+							"path": [
+								"api",
+								"plateLookUp",
+								"00115689576"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"description": "Aquí almaceno el endpoint para Consulta de Placas"
+		},
+		{
+			"name": "Login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"userName\": \"admin\",\r\n  \"password\": \"123456\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5157/api/auth/login",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5157",
+					"path": [
+						"api",
+						"auth",
+						"login"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
